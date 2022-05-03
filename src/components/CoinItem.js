@@ -4,7 +4,7 @@ import "./Coins/Coins.css";
 const CoinItem = props => {
   return (
     <div className="coin-row">
-      <p>{props.coins.market_cap_rank}</p>
+      <p className="coin-market-rank">{props.coins.market_cap_rank}</p>
       <div className="img-symbol">
         <img src={props.coins.image} alt="coin-image" />
         <p>{props.coins.symbol.toUpperCase()}</p>
